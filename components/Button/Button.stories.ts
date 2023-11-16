@@ -1,6 +1,6 @@
 import { Meta, StoryObj } from '@storybook/react'
 
-import Button, { ButtonProps } from './index'
+import Button, { ButtonProps } from '.'
 
 const meta: Meta<ButtonProps> = {
  title: 'Molecules/Button',
@@ -13,5 +13,12 @@ export default meta
 export const Primary: StoryObj<ButtonProps> = {
   args: {
     children: 'Button'
+  }
+}
+
+export const Violet: StoryObj<ButtonProps> = {
+  args: {
+    children: 'Button',
+    className: 'theme-violet'
   }
 }
