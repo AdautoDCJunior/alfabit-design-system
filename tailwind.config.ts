@@ -40,13 +40,19 @@ const config: Config = {
         icon: toRgba('--icon'),
         outline: toRgba('--outline'),
         divider: toRgba('--divider'),
-        'bg-light': toRgba('--bg-light'),
-        'bg-dark': toRgba('--bg-dark'),
-        'bg-disabled': toRgba('--bg-disabled'),
-        'text-primary': toRgba('text-primary'),
-        'text-secondary': toRgba('text-secondary'),
-        'text-tertiary': toRgba('text-tertiary'),
-        'text-disabled': toRgba('text-disabled')
+      },
+      backgroundColor:{
+        light: toRgba('--bg-light'),
+        dark: toRgba('--bg-dark'),
+        disabled: toRgba('--bg-disabled'),
+      },
+      textColor: {
+        gray: {
+          primary: toRgba('text-primary'),
+          secondary: toRgba('text-secondary'),
+          tertiary: toRgba('text-tertiary'),
+        },
+        disabled: toRgba('text-disabled')
       },
       boxShadow: {
         sm: 'var(--shadow-sm)',
