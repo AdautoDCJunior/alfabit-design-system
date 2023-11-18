@@ -11,6 +11,9 @@ const config: Config = {
     './app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
+    fontFamily: {
+      mulish: 'Mulish, sans-serif',
+    },
     screens: {
       mobile: 'var(--screen-mobile)',
       table: 'var(--screen-table)',
@@ -29,6 +32,14 @@ const config: Config = {
       '2xl': 'var(--spacing-2xl)',
       '4xl': 'var(--spacing-4xl)',
     },
+    fontSize: {
+      xs: 'var(--text-xs)',
+      sm: 'var(--text-sm)',
+      md: 'var(--text-md)',
+      lg: 'var(--text-lg)',
+      xl: 'var(--text-xl)',
+      '2xl': 'var(--text-2xl)'
+    },
     extend: {
       colors: {
         primary: toRgba('--primary'),
@@ -40,6 +51,7 @@ const config: Config = {
         icon: toRgba('--icon'),
         outline: toRgba('--outline'),
         divider: toRgba('--divider'),
+        disabled: toRgba('text-disabled'),
       },
       backgroundColor:{
         light: toRgba('--bg-light'),
@@ -51,8 +63,7 @@ const config: Config = {
           primary: toRgba('text-primary'),
           secondary: toRgba('text-secondary'),
           tertiary: toRgba('text-tertiary'),
-        },
-        disabled: toRgba('text-disabled')
+        }
       },
       boxShadow: {
         sm: 'var(--shadow-sm)',
