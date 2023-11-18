@@ -67,7 +67,7 @@ export const DefaultTertiaryDisabled: StoryObj<ButtonProps> = {
   }
 }
 
-export const Violet: StoryObj<ButtonProps> = {
+export const VioletPrimary: StoryObj<ButtonProps> = {
   args: {
     children: 'Button',
     variant: 'primary',
