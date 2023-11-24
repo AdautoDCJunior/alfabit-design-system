@@ -1,58 +1,58 @@
-import { Meta, StoryObj } from '@storybook/react'
+import { Meta, StoryObj } from '@storybook/react';
 
-import Link, { LinkProps } from '.'
+import Link, { LinkProps } from '.';
 
-const defaultText = 'Link'
+const defaultText = 'Link';
 
 const meta: Meta<LinkProps> = {
   title: 'Molecules/Link',
   component: Link,
   argTypes: {
     children: {
-      type: 'string'
+      type: 'string',
     },
     href: {
-      type: 'string'
+      type: 'string',
     },
     disabled: {
-      type: 'boolean'
+      type: 'boolean',
     },
     className: {
-      type: 'string'
-    }
-  }
-}
+      type: 'string',
+    },
+  },
+};
 
-export default meta
+export default meta;
 
 export const DefaultPrimary: StoryObj<LinkProps> = {
   args: {
     children: defaultText,
-    href: '/'
-  }
-}
+    href: '/',
+  },
+};
 
 export const DefaultPrimaryDisabled: StoryObj<LinkProps> = {
   args: {
     children: defaultText,
     href: '/',
-    disabled: true
-  }
-}
+    disabled: true,
+  },
+};
 
 export const VioletPrimary: StoryObj<LinkProps> = {
   args: {
     children: defaultText,
     href: '/',
-    className: 'theme-violet'
-  }
-}
+    className: 'theme-violet',
+  },
+};
 
 export const VioletPrimaryDisabled: StoryObj<LinkProps> = {
   args: {
     children: defaultText,
     href: '/',
     className: 'theme-violet',
-    disabled: true
-  }
-}
+    disabled: true,
+  },
+};

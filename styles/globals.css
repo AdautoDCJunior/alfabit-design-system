@@ -4,7 +4,8 @@
 
 @font-face {
   font-family: 'Mulish';
-  src: url('../fonts/Mulish-Regular.woff2') format('woff2'),
+  src:
+    url('../fonts/Mulish-Regular.woff2') format('woff2'),
     url('../fonts/Mulish-Regular.woff') format('woff');
   font-weight: 400;
   font-display: swap;
@@ -46,11 +47,11 @@
 
     /* Shadows */
     --shadow-sm: 0px 0px 10px 0px rgba(132, 132, 132, 0.15);
-    --shadow-md: 0px 0px 20px 0px rgba(132, 132, 132, 0.20);
+    --shadow-md: 0px 0px 20px 0px rgba(132, 132, 132, 0.2);
     --shadow-lg: 0px 0px 30px 0px rgba(132, 132, 132, 0.25);
     --shadow-focus: 0px 0px 0px 2px #643296;
-    --shadow-outline: 0px 0px 0px 2px #E8E8E8;
-    --shadow-button-focus: 0px 0px 0px 2px #AF4BFE;
+    --shadow-outline: 0px 0px 0px 2px #e8e8e8;
+    --shadow-button-focus: 0px 0px 0px 2px #af4bfe;
 
     /* Blur */
     --blur: 4px;

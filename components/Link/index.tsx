@@ -12,6 +12,6 @@ const Link = ({ children, href, disabled, className, ...rest }: LinkProps) => (
   >
     {children}
   </a>
-)
+);
 
-export default Link
+export default Link;

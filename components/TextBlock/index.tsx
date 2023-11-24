@@ -1,14 +1,14 @@
 export type TextBlockProps = {
-  title: string,
-  body: string,
-  className?: string
-}
+  title: string;
+  body: string;
+  className?: string;
+};
 
 const TextBlock = ({ title, body, className }: TextBlockProps) => (
-  <div className={`flex flex-wrap bg-dark px-2xl py-lg gap-xs ${className}`}>
-    <h1 className='text-gray-primary text-2xl font-extrabold'>{title}</h1>
-    <p className='text-gray-primary text-md font-normal'>{body}</p>
+  <div className={`flex flex-wrap gap-xs bg-dark px-2xl py-lg ${className}`}>
+    <h1 className="text-2xl font-extrabold text-gray-primary">{title}</h1>
+    <p className="text-md font-normal text-gray-primary">{body}</p>
   </div>
-)
+);
 
-export default TextBlock
+export default TextBlock;
