@@ -1,8 +1,8 @@
-import type { Config } from 'tailwindcss'
+import type { Config } from 'tailwindcss';
 
 const toRgba = (cssVariable: string) => {
-  return `rgba(var(${cssVariable}), <alpha-value>)`
-}
+  return `rgba(var(${cssVariable}), <alpha-value>)`;
+};
 
 const config: Config = {
   content: [
@@ -18,17 +18,17 @@ const config: Config = {
       mobile: 'var(--screen-mobile)',
       table: 'var(--screen-table)',
       desktop: 'var(--screen-desktop)',
-      tv: 'var(--screen-tv)'
+      tv: 'var(--screen-tv)',
     },
     spacing: {
-      'none': 'var(--spacing-none)',
+      none: 'var(--spacing-none)',
       '4xs': 'var(--spacing-4xs)',
       '2xs': 'var(--spacing-2xs)',
-      'xs': 'var(--spacing-xs)',
-      'sm': 'var(--spacing-sm)',
-      'md': 'var(--spacing-md)',
-      'lg': 'var(--spacing-lg)',
-      'xl': 'var(--spacing-xl)',
+      xs: 'var(--spacing-xs)',
+      sm: 'var(--spacing-sm)',
+      md: 'var(--spacing-md)',
+      lg: 'var(--spacing-lg)',
+      xl: 'var(--spacing-xl)',
       '2xl': 'var(--spacing-2xl)',
       '4xl': 'var(--spacing-4xl)',
     },
@@ -38,7 +38,7 @@ const config: Config = {
       md: 'var(--text-md)',
       lg: 'var(--text-lg)',
       xl: 'var(--text-xl)',
-      '2xl': 'var(--text-2xl)'
+      '2xl': 'var(--text-2xl)',
     },
     extend: {
       colors: {
@@ -53,7 +53,7 @@ const config: Config = {
         divider: toRgba('--divider'),
         disabled: toRgba('text-disabled'),
       },
-      backgroundColor:{
+      backgroundColor: {
         light: toRgba('--bg-light'),
         dark: toRgba('--bg-dark'),
         disabled: toRgba('--bg-disabled'),
@@ -63,7 +63,7 @@ const config: Config = {
           primary: toRgba('text-primary'),
           secondary: toRgba('text-secondary'),
           tertiary: toRgba('text-tertiary'),
-        }
+        },
       },
       boxShadow: {
         sm: 'var(--shadow-sm)',
@@ -71,20 +71,20 @@ const config: Config = {
         lg: 'var(--shadow-lg)',
         focus: 'var(--shadow-focus)',
         outline: 'var(--shadow-outline)',
-        'button-focus': 'var(--shadow-button-focus)'
+        'button-focus': 'var(--shadow-button-focus)',
       },
       blur: {
-        default: 'var(--blur)'
+        default: 'var(--blur)',
       },
       borderRadius: {
         none: 'var(--border-radius-none)',
         sm: 'var(--border-radius-sm)',
         md: 'var(--border-radius-md)',
-        lg: 'var(--border-radius-lg)'
-      }
+        lg: 'var(--border-radius-lg)',
+      },
     },
   },
   plugins: [],
-}
+};
 
-export default config
+export default config;
